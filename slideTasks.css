@@ -11,6 +11,7 @@ body{
     background-repeat: no-repeat;
 }
 
+
 @keyframes slider_image{
     0%,10%{background-image: url(slides/slide1.jpg) ;}
     12%,21%{background-image: url(slides/slide2.jpg) ;}
@@ -23,6 +24,32 @@ body{
     89%,100%{background-image: url(slides/slide9.jpg) ;}
     
 }
+
+
+/* after slide 9 it mirrors so i dont get stutter when i change direction */
+/*
+@keyframes slider_image{
+    0%, 5% { background-image: url(slides/slide1.jpg); }
+    6%, 11% { background-image: url(slides/slide2.jpg); }
+    12%, 17% { background-image: url(slides/slide3.jpg); }
+    18%, 23% { background-image: url(slides/slide4.jpg); }
+    24%, 29% { background-image: url(slides/slide5.jpg); }
+    30%, 35% { background-image: url(slides/slide6.jpg); }
+    36%, 41% { background-image: url(slides/slide7.jpg); }
+    42%, 47% { background-image: url(slides/slide8.jpg); }
+    48%, 52% { background-image: url(slides/slide9.jpg); }
+    53%, 58% { background-image: url(slides/slide8.jpg); }
+    59%, 64% { background-image: url(slides/slide7.jpg); }
+    65%, 70% { background-image: url(slides/slide6.jpg); }
+    71%, 76% { background-image: url(slides/slide5.jpg); }
+    77%, 82% { background-image: url(slides/slide4.jpg); }
+    83%, 88% { background-image: url(slides/slide3.jpg); }
+    89%, 94% { background-image: url(slides/slide2.jpg); }
+    95%, 100% { background-image: url(slides/slide1.jpg); }
+    
+} 
+
+*/
 #task3{
     animation-duration: 60s;
     background-image: url(slides/slide1.jpg);
@@ -41,7 +68,7 @@ body{
     color: lightgray;
 }
 #task4:has(.leftArrow:hover){
-    animation-direction: alternate-reverse;
+    animation-direction: reverse;
 }
 #task4:has(.rightArrow:hover){
     animation-direction: alternate;
