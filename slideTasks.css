@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+
+#task1 ,#task3 ,#task4{
+    width: 100vw;
+    height: 60vw;
+    animation: slider_image 60s infinite;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@keyframes slider_image{
+    0%,10%{background-image: url(slides/slide1.jpg) ;}
+    12%,21%{background-image: url(slides/slide2.jpg) ;}
+    23%,32%{background-image: url(slides/slide3.jpg) ;}
+    34%,43%{background-image: url(slides/slide4.jpg) ;}
+    45%,54%{background-image: url(slides/slide5.jpg) ;}
+    56%,65%{background-image: url(slides/slide6.jpg) ;}
+    67%,76%{background-image: url(slides/slide7.jpg) ;}
+    78%,87%{background-image: url(slides/slide8.jpg) ;}
+    89%,100%{background-image: url(slides/slide9.jpg) ;}
+    
+}
+#task3{
+    animation-duration: 60s;
+    background-image: url(slides/slide1.jpg);
+    animation-play-state: paused;
+}
+
+#task3:hover{
+    animation-play-state: running;
+}
+
+#task4{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 5vw;
+    color: lightgray;
+}
+#task4:has(.leftArrow:hover){
+    animation-direction: alternate-reverse;
+}
+#task4:has(.rightArrow:hover){
+    animation-direction: alternate;
+}

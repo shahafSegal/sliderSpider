@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+
+#task2{
+    width: 100vw;
+    height: 20vw;
+    background-size: 33% 100% , 33% 100% , 33% 100% ;
+    background-position: top left, top center,top right;
+    animation: slider_image_3slides 10s alternate infinite; 
+    background-image: url(slides/slide1.jpg),url(slides/slide1.jpg),url(slides/slide1.jpg)  ;
+    background-repeat: no-repeat;
+}
+
+@keyframes slider_image_3slides{
+    0%,39%{background-image: url(slides/slide1.jpg) ,url(slides/slide2.jpg),url(slides/slide3.jpg);}
+    40%,79.5%{background-image: url(slides/slide4.jpg) ,  url(slides/slide5.jpg), url(slides/slide6.jpg);}
+    80.5%,100%{background-image: url(slides/slide7.jpg) , url(slides/slide8.jpg), url(slides/slide9.jpg);}
+    
+}
+
