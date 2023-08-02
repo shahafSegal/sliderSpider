@@ -4,8 +4,8 @@ body{
 
 
 #task1 ,#task3 ,#task4{
-    width: 100vw;
-    height: 60vw;
+    width: 90vw;
+    height: 55vw;
     animation: slider_image 60s infinite;
     background-size: 100% 100%;
     background-repeat: no-repeat;
