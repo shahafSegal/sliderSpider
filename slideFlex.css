@@ -13,7 +13,7 @@ body{
     flex-direction: row-reverse;
     column-gap: 0.33%;
     background-color: black;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .slideEl{
@@ -21,6 +21,13 @@ body{
 
     animation: rotate_slides 30s linear infinite 5s;
 }
+
+#task6:hover .slideEl{
+    animation-play-state: paused;
+
+}
+    
+
 
 .frst3{
     animation-name: rotate_slides_frst3;
