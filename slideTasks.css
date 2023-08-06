@@ -67,9 +67,10 @@ body{
     font-size: 5vw;
     color: lightgray;
 }
+
 #task4:has(.leftArrow:hover){
     animation-direction: reverse;
 }
 #task4:has(.rightArrow:hover){
-    animation-direction: alternate;
+    animation-direction: normal;
 }

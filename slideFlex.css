@@ -18,29 +18,25 @@ body{
 
 .slideEl{
     width: 33%;
-
     animation: rotate_slides 30s linear infinite 5s;
 }
 
-#task6:hover .slideEl{
+.sliderDiv:hover .slideEl{
     animation-play-state: paused;
-
 }
     
-
-
 .frst3{
     animation-name: rotate_slides_frst3;
 }
 
-
+/*general animation for all slides*/
 @keyframes rotate_slides {
     0%{ transform: translatex(0);}
     23%,33.3%{transform: translatex(303%);}
     56%,66.67%{transform: translatex(606%);}
     90%,100%{transform: translatex( 909%);}
 }
-
+/*animation for sliders in the first screen to loops around*/
 @keyframes rotate_slides_frst3 {
     0%{ transform: translatex(0);}
     23%{transform: translatex(303%); visibility: visible;}
@@ -52,9 +48,9 @@ body{
 
 
 #leftPlay , #rightPlay{
-    height:2.5vmin; 
-    width:2.5vmin;
-    min-width: 2.5vmin;
+    height:4vmin; 
+    width:4vmin;
+    min-width: 4vmin;
     
 }
 
